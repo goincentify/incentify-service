@@ -1,0 +1,9 @@
+spring:
+    datasource:
+        initialization-mode: always
+        url: jdbc:mysql://localhost/incentify_data
+        username: root
+        password: Sergei13
+    jpa:
+        hibernate:
+            ddl-auto : update
