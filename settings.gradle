@@ -3,4 +3,4 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'incentify-api'
+rootProject.name = 'incentify-service'

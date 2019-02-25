@@ -1,10 +1,7 @@
 package com.incentify.incentifyapi._controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import com.incentify.incentifyapi._models.OrderItem;
-import com.incentify.incentifyapi._models.RewardItem;
 import com.incentify.incentifyapi._models.User;
 import com.incentify.incentifyapi._service.UserRepository;
 import com.incentify.incentifyapi._service.UserService;

@@ -1,1 +1,1 @@
-# incentify-api
+# incentify-service

@@ -1,9 +1,15 @@
 spring:
     datasource:
-        initialization-mode: always
-        url: jdbc:mysql://localhost/incentify_data
+        url: jdbc:mysql://localhost/incentify
         username: root
         password: Sergei13
     jpa:
         hibernate:
-            ddl-auto : update
+            #USE ONLY WHEN DB HAS BEEN INITIALIZED
+            ddl-auto: update
+            
+            #USE ONLY WHEN DB NEEDS INITIALIZATION
+            # ddl-auto : create
+    h2:
+        console:
+            enabled: true

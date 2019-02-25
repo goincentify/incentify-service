@@ -2,14 +2,13 @@ package com.incentify.incentifyapi._models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     Long id;
 
     String username;
@@ -32,7 +31,9 @@ public class User {
     Integer ontimedays;
     Integer daystreak;
 
+    // DEFAULT, makes JPA happy.
     protected User() {
+        super();
     }
 
     public User(String username, String password, String firstName, String lastName) {
