@@ -9,16 +9,11 @@ import com.incentify.incentifyapi._models.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
 @Service
 public class UserService {
 
     @Autowired
     private UserRepository userRepository;
-
-    @Autowired
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     private Tier tier = new Tier();
 
@@ -32,7 +27,7 @@ public class UserService {
         User newUser = new User();
 
         newUser.setUsername(username);
-        newUser.setPassword(bCryptPasswordEncoder.encode(password));
+        newUser.setPassword(password);
         newUser.setFirstName(firstName);
         newUser.setLastName(lastName);
         newUser.setToken("token");
