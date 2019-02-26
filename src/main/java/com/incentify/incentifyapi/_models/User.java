@@ -32,7 +32,7 @@ public class User {
     Integer daystreak;
 
     // DEFAULT, makes JPA happy.
-    protected User() {
+    public User() {
         super();
     }
 

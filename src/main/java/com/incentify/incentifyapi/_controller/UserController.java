@@ -7,6 +7,7 @@ import com.incentify.incentifyapi._service.UserRepository;
 import com.incentify.incentifyapi._service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,11 +17,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class UserController {
 
+	@Value("${properties.message}")
+	private String message;
+
 	@Autowired
 	UserService userService = new UserService();
 
 	@Autowired
 	private UserRepository userRepository;
+
+	// TEST
+	@ResponseBody
+	@RequestMapping(value = "/message", method = RequestMethod.GET, produces = "application/json")
+	String getMessage() {
+		return message;
+	}
 
 	// POST register user
 	@RequestMapping(value = "/user/register", method = RequestMethod.POST, produces = "application/json")
@@ -41,14 +52,14 @@ class UserController {
 	@ResponseBody
 	@RequestMapping(value = "/user", method = RequestMethod.GET, produces = "application/json")
 	User getUser(@RequestParam(value = "id", required = false, defaultValue = "1") String id) {
-		// User usr = new User("lennon", "password", "John", "Lennon");
-		return userRepository.findById(Long.parseLong(id)).get();
+		return userService.find(Long.parseLong(id));
 	}
 
 	// POST authenticate user
 	@ResponseBody
 	@RequestMapping(value = "/user/authenticate", method = RequestMethod.POST, produces = "application/json")
-	User authenticateUser(@RequestParam(value = "id", required = false, defaultValue = "1") String id) {
+	User authenticateUser(@RequestParam(value = "username", required = true) String username,
+			@RequestParam(value = "password", required = true) String password) {
 		return null;
 	}
 
@@ -69,7 +80,7 @@ class UserController {
 	// DELETE delete user
 	@ResponseBody
 	@RequestMapping(value = "/user/delete", method = RequestMethod.DELETE, produces = "application/json")
-	String deleteUser(@RequestParam(value = "id", required = false, defaultValue = "1") String id) {
-		return "DELETE";
+	int deleteUser(@RequestParam(value = "id", required = false, defaultValue = "1") String id) {
+		return userService.remove(Long.parseLong(id));
 	}
 }

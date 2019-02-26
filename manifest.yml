@@ -1,0 +1,6 @@
+applications:
+- name: incentify-service
+buildpack: java_buildpack
+path: ./incentify-service.jar
+services:
+    - db_incentify

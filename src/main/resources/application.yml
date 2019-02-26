@@ -1,8 +1,6 @@
 spring:
-    datasource:
-        url: jdbc:mysql://localhost/incentify
-        username: root
-        password: Sergei13
+    profiles:
+        active: local
     jpa:
         hibernate:
             #USE ONLY WHEN DB HAS BEEN INITIALIZED
@@ -13,3 +11,23 @@ spring:
     h2:
         console:
             enabled: true
+properties:
+    message: testingmessage
+
+---
+
+spring: 
+    profiles: cloud
+    datasource:
+        url: jdbc:mysql://localhost/incentify
+        username: root
+        password: Sergei13
+
+--- 
+
+spring:
+    profiles: local
+    datasource:
+        url: jdbc:mysql://localhost/incentify
+        username: root
+        password: Sergei13

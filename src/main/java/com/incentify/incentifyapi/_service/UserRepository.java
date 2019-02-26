@@ -10,6 +10,8 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
     boolean existsByUsername(String username);
 
+    void deleteById(Long id);
+
     List<User> findByLastName(String lastName);
 
     List<User> findByFirstName(String firstName);

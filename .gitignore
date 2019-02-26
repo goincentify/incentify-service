@@ -6,8 +6,8 @@
 .vscode
 /.gradle/
 /.settings/
-/bin/
-/build/
+/bin/*
+/build/*
 .classpath
 **/.idea/bin/
 /.metadata/
