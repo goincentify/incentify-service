@@ -3,7 +3,6 @@ package com.incentify.incentifyapi._controller;
 import java.util.List;
 
 import com.incentify.incentifyapi._models.User;
-import com.incentify.incentifyapi._service.UserRepository;
 import com.incentify.incentifyapi._service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,10 +20,7 @@ class UserController {
 	private String message;
 
 	@Autowired
-	UserService userService = new UserService();
-
-	@Autowired
-	private UserRepository userRepository;
+	private UserService userService = new UserService();
 
 	// TEST
 	@ResponseBody
@@ -66,15 +62,30 @@ class UserController {
 	// POST add points to user
 	@ResponseBody
 	@RequestMapping(value = "/user/points/add", method = RequestMethod.POST, produces = "application/json")
-	String addUserPoints(@RequestParam(value = "id", required = false, defaultValue = "1") String id) {
-		return "ADD POINTS";
+	int addUserPoints(@RequestParam(value = "points") String points, @RequestParam(value = "id") String id) {
+		return userService.addUserPoints(Long.parseLong(id), Integer.parseInt(points));
 	}
 
 	// POST redeem valid code
 	@ResponseBody
 	@RequestMapping(value = "/user/points/redeem", method = RequestMethod.POST, produces = "application/json")
-	String redeemUserPoints(@RequestParam(value = "id", required = false, defaultValue = "1") String id) {
-		return "REDEEM";
+	Integer redeemUserPoints(@RequestParam(value = "code") String code, @RequestParam(value = "id") String id) {
+		return userService.redeem(Long.parseLong(id), code);
+	}
+
+	// POST redeem valid code
+	@ResponseBody
+	@RequestMapping(value = "/user/update", method = RequestMethod.POST, produces = "application/json")
+	User updateUser(@RequestParam(value = "id") String id,
+			@RequestParam(value = "username", required = false) String username,
+			@RequestParam(value = "password", required = false) String password,
+			@RequestParam(value = "address", required = false) String address,
+			@RequestParam(value = "city", required = false) String city,
+			@RequestParam(value = "state", required = false) String state,
+			@RequestParam(value = "zip", required = false) Integer zip,
+			@RequestParam(value = "bio", required = false) String bio) {
+
+		return userService.update(Long.parseLong(id), username, password, address, city, state, zip, bio);
 	}
 
 	// DELETE delete user

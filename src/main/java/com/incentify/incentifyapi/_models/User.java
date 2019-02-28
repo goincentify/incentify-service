@@ -85,7 +85,9 @@ public class User {
      * @param id the id to set
      */
     public void setId(Long id) {
-        this.id = id;
+        if (id != null) {
+            this.id = id;
+        }
     }
 
     /**
@@ -99,7 +101,9 @@ public class User {
      * @param username the username to set
      */
     public void setUsername(String username) {
-        this.username = username;
+        if (username != null) {
+            this.username = username;
+        }
     }
 
     /**
@@ -113,7 +117,9 @@ public class User {
      * @param password the password to set
      */
     public void setPassword(String password) {
-        this.password = password;
+        if (password != null) {
+            this.password = password;
+        }
     }
 
     /**
@@ -127,7 +133,9 @@ public class User {
      * @param firstName the firstName to set
      */
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        if (firstName != null) {
+            this.firstName = firstName;
+        }
     }
 
     /**
@@ -141,7 +149,9 @@ public class User {
      * @param lastName the lastName to set
      */
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        if (lastName != null) {
+            this.lastName = lastName;
+        }
     }
 
     /**
@@ -155,7 +165,9 @@ public class User {
      * @param token the token to set
      */
     public void setToken(String token) {
-        this.token = token;
+        if (token != null) {
+            this.token = token;
+        }
     }
 
     /**
@@ -169,7 +181,9 @@ public class User {
      * @param job the job to set
      */
     public void setJob(String job) {
-        this.job = job;
+        if (job != null) {
+            this.job = job;
+        }
     }
 
     /**
@@ -183,7 +197,9 @@ public class User {
      * @param tier the tier to set
      */
     public void setTier(String tier) {
-        this.tier = tier;
+        if (tier != null) {
+            this.tier = tier;
+        }
     }
 
     /**
@@ -197,7 +213,9 @@ public class User {
      * @param bio the bio to set
      */
     public void setBio(String bio) {
-        this.bio = bio;
+        if (bio != null) {
+            this.bio = bio;
+        }
     }
 
     /**
@@ -211,7 +229,9 @@ public class User {
      * @param address the address to set
      */
     public void setAddress(String address) {
-        this.address = address;
+        if (address != null) {
+            this.address = address;
+        }
     }
 
     /**
@@ -225,7 +245,9 @@ public class User {
      * @param city the city to set
      */
     public void setCity(String city) {
-        this.city = city;
+        if (city != null) {
+            this.city = city;
+        }
     }
 
     /**
@@ -239,7 +261,9 @@ public class User {
      * @param state the state to set
      */
     public void setState(String state) {
-        this.state = state;
+        if (state != null) {
+            this.state = state;
+        }
     }
 
     /**
@@ -253,7 +277,9 @@ public class User {
      * @param zip the zip to set
      */
     public void setZip(Integer zip) {
-        this.zip = zip;
+        if (zip != null) {
+            this.zip = zip;
+        }
     }
 
     /**
@@ -267,7 +293,9 @@ public class User {
      * @param interests the interests to set
      */
     public void setInterests(String interests) {
-        this.interests = interests;
+        if (interests != null) {
+            this.interests = interests;
+        }
     }
 
     /**
@@ -281,7 +309,9 @@ public class User {
      * @param picture the picture to set
      */
     public void setPicture(String picture) {
-        this.picture = picture;
+        if (picture != null) {
+            this.picture = picture;
+        }
     }
 
     /**
@@ -295,7 +325,9 @@ public class User {
      * @param points the points to set
      */
     public void setPoints(Integer points) {
-        this.points = points;
+        if (points != null) {
+            this.points = points;
+        }
     }
 
     /**
@@ -309,7 +341,9 @@ public class User {
      * @param totaldays the totaldays to set
      */
     public void setTotaldays(Integer totaldays) {
-        this.totaldays = totaldays;
+        if (totaldays != null) {
+            this.totaldays = totaldays;
+        }
     }
 
     /**
@@ -323,7 +357,9 @@ public class User {
      * @param ontimedays the ontimedays to set
      */
     public void setOntimedays(Integer ontimedays) {
-        this.ontimedays = ontimedays;
+        if (ontimedays != null) {
+            this.ontimedays = ontimedays;
+        }
     }
 
     /**
@@ -337,7 +373,9 @@ public class User {
      * @param daystreak the daystreak to set
      */
     public void setDaystreak(Integer daystreak) {
-        this.daystreak = daystreak;
+        if (daystreak != null) {
+            this.daystreak = daystreak;
+        }
     }
 
 }

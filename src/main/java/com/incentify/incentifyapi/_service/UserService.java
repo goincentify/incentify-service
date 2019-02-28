@@ -1,6 +1,7 @@
 package com.incentify.incentifyapi._service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 
 import com.incentify.incentifyapi._models.Tier;
@@ -14,6 +15,12 @@ public class UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private RewardCodeService rewardCodeService;
+
+    @Autowired
+    private RewardCodeRepository rewardCodeRepository;
 
     private Tier tier = new Tier();
 
@@ -62,6 +69,30 @@ public class UserService {
         } catch (Exception e) {
             return 0;
         }
+    }
+
+    public User update(Long id, String username, String password, String address, String city, String state,
+            Integer zip, String bio) {
+
+        User updateUser = userRepository.findById(id).get();
+
+        updateUser.setUsername(username);
+        updateUser.setPassword(password);
+        updateUser.setAddress(address);
+        updateUser.setCity(city);
+        updateUser.setState(state);
+        updateUser.setZip(zip);
+        updateUser.setBio(bio);
+
+        return userRepository.save(updateUser);
+    }
+
+    public Integer addUserPoints(Long id, Integer points) {
+        return userRepository.addUserPoints(id, points);
+    }
+
+    public Integer redeem(Long id, String code) {
+        return userRepository.addUserPoints(id, rewardCodeService.redeem(code));
     }
 
     public User find(Long id) {
