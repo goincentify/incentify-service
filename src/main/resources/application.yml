@@ -21,7 +21,7 @@ spring:
     datasource:
         url: jdbc:mysql://localhost/incentify
         username: root
-        password: Sergei13
+        password: toor
 
 --- 
 
@@ -30,4 +30,4 @@ spring:
     datasource:
         url: jdbc:mysql://localhost/incentify
         username: root
-        password: Sergei13
+        password: toor
