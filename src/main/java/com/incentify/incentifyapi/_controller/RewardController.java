@@ -22,7 +22,7 @@ class RewardController {
 	// TEST
 	@ResponseBody
 	@RequestMapping(value = "/rewards/all", method = RequestMethod.GET, produces = "application/json")
-	JsonNode getRewards() {
+	String getRewards() {
 		RewardLoader rewardLoader = new RewardLoader();		
 		return rewardLoader.getRewards();
 		//return "test";
