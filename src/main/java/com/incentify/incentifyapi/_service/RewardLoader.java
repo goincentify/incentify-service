@@ -18,6 +18,7 @@ public class RewardLoader {
 		   File directory = new File("./src/main/java/com/incentify/incentifyapi/_models/_defaultRewards.json");
 		   System.out.println(directory.getAbsolutePath());
 		return readJson.readFileAsString(directory.getAbsolutePath());
+
 	}
 
 }
