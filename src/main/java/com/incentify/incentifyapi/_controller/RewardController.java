@@ -24,7 +24,6 @@ class RewardController {
 	@RequestMapping(value = "/rewards/all", method = RequestMethod.GET, produces = "application/json")
 	JsonNode getRewards() {
 		RewardLoader rewardLoader = new RewardLoader();		
-		return rewardLoader.getRewards();
-		//return "test";
+		return rewardLoader.getRewards();	
 	}
 }
