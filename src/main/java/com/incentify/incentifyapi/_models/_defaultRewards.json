@@ -1,6 +1,4 @@
 [
-    {
-    "RewardItems": [
         {
             "id": 1,
             "name": "Weekend Getaway - New York",
@@ -1014,5 +1012,3 @@
             "incart": false
         }
     ]
-}
-]
