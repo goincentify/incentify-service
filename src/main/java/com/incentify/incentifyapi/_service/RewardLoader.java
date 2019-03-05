@@ -14,8 +14,6 @@ import com.incentify.incentifyapi._models.RewardItem;
 
 @Service
 public class RewardLoader {
-//	@Autowired
-//	ReadJson readJson;
 
 	public String getRewards() throws IOException {
 		ReadJson readJson = new ReadJson();

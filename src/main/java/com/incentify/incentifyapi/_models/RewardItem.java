@@ -2,15 +2,29 @@ package com.incentify.incentifyapi._models;
 
 import java.util.List;
 
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class RewardItem {
+	@Id
 	Integer id;
+
 	String name;
 	Integer price;
 	String category;
 	String description;
+
+	@ElementCollection
 	List<String> tags;
+
 	String image;
 	Boolean incart;
+
+	public RewardItem() {
+		super();
+	}
 
 	/**
 	 * @return the id
