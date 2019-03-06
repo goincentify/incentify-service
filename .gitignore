@@ -16,3 +16,4 @@ jmeter.log
 src/test/jmeter/jmeter.log
 src/test/jmeter/jmeter.properties
 src/test/jmeter/service-jmeter-tests.jtl
+/build/
