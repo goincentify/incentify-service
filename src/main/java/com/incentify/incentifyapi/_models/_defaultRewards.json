@@ -5,13 +5,7 @@
             "price": 60000,
             "category": "Vacation",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Vacation",
-                "Travel",
-                "New York",
-                "Flight",
-                "Vacation Packages"
-            ],
+            "tags": "Vacation:Travel:New York:Flight:Vacation Packages",
             "image": "/assets/img/rewards/weekend1.jpg",
             "incart": false
         },
@@ -21,13 +15,7 @@
             "price": 60000,
             "category": "Vacation",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Vacation",
-                "Travel",
-                "Minneapolis",
-                "Flight",
-                "Vacation Packages"
-            ],
+            "tags": "Vacation:Travel:Minneapolis:Flight:Vacation Packages",
             "image": "/assets/img/rewards/weekend2.jpg",
             "incart": false
         },
@@ -37,13 +25,7 @@
             "price": 60000,
             "category": "Vacation",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Vacation",
-                "Travel",
-                "Boston",
-                "Flight",
-                "Vacation Packages"
-            ],
+            "tags": "Vacation:Travel:Boston:Flight:Vacation Packages",
             "image": "/assets/img/rewards/weekend3.jpg",
             "incart": false
         },
@@ -53,11 +35,7 @@
             "price": 2500,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "VISA"
-            ],
+            "tags": "Gift Card:Shopping:VISA",
             "image": "/assets/img/rewards/VISA.jpg",
             "incart": false
         },
@@ -67,11 +45,7 @@
             "price": 5000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "VISA"
-            ],
+            "tags": "Gift Card:Shopping:VISA",
             "image": "/assets/img/rewards/VISA.jpg",
             "incart": false
         },
@@ -81,11 +55,7 @@
             "price": 25000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "VISA"
-            ],
+            "tags": "Gift Card:Shopping:VISA",
             "image": "/assets/img/rewards/VISA.jpg",
             "incart": false
         },
@@ -95,13 +65,7 @@
             "price": 10000,
             "category": "Voucher",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Voucher",
-                "Gift Card",
-                "Travel",
-                "Hotel",
-                "Vacation Packages"
-            ],
+            "tags": "Voucher:Gift Card:Travel:Hotel:Vacation Packages",
             "image": "/assets/img/rewards/hotel.jpg",
             "incart": false
         },
@@ -111,13 +75,7 @@
             "price": 20000,
             "category": "Voucher",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Voucher",
-                "Gift Card",
-                "Travel",
-                "Hotel",
-                "Vacation Packages"
-            ],
+            "tags": "Voucher:Gift Card:Travel:Hotel:Vacation Packages",
             "image": "/assets/img/rewards/hotel.jpg",
             "incart": false
         },
@@ -127,13 +85,7 @@
             "price": 5000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Voucher",
-                "Gift Card",
-                "Travel",
-                "Flight",
-                "Vacation Packages"
-            ],
+            "tags": "Voucher:Gift Card:Travel:Flight:Vacation Packages",
             "image": "/assets/img/rewards/airline.jpg",
             "incart": false
         },
@@ -143,13 +95,7 @@
             "price": 10000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Voucher",
-                "Gift Card",
-                "Travel",
-                "Flight",
-                "Vacation Packages"
-            ],
+            "tags": "Voucher:Gift Card:Travel:Flight:Vacation Packages",
             "image": "/assets/img/rewards/airline.jpg",
             "incart": false
         },
@@ -159,14 +105,7 @@
             "price": 7500,
             "category": "Fitness",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitness",
-                "Gift Card",
-                "Gym",
-                "Membership",
-                "Workout",
-                "Gym Membership"
-            ],
+            "tags": "Fitness:Gift Card:Gym:Membership:Workout:Gym Membership",
             "image": "/assets/img/rewards/gym.jpg",
             "incart": false
         },
@@ -176,14 +115,7 @@
             "price": 15000,
             "category": "Fitness",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitness",
-                "Gift Card",
-                "Gym",
-                "Membership",
-                "Workout",
-                "Gym Membership"
-            ],
+            "tags": "Fitness:Gift Card:Gym:Membership:Workout:Gym Membership",
             "image": "/assets/img/rewards/gym.jpg",
             "incart": false
         },
@@ -193,14 +125,7 @@
             "price": 22500,
             "category": "Fitness",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitness",
-                "Gift Card",
-                "Gym",
-                "Membership",
-                "Workout",
-                "Gym Membership"
-            ],
+            "tags": "Fitness:Gift Card:Gym:Membership:Workout:Gym Membership",
             "image": "/assets/img/rewards/gym.jpg",
             "incart": false
         },
@@ -210,14 +135,7 @@
             "price": 30000,
             "category": "Fitness",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitness",
-                "Gift Card",
-                "Gym",
-                "Membership",
-                "Workout",
-                "Gym Membership"
-            ],
+            "tags": "Fitness:Gift Card:Gym:Membership:Workout:Gym Membership",
             "image": "/assets/img/rewards/gym.jpg",
             "incart": false
         },
@@ -227,13 +145,7 @@
             "price": 2500,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Food",
-                "Grocery",
-                "Groceries"
-            ],
+            "tags": "Gift Card:Shopping:Food:Grocery:Groceries",
             "image": "../../../assets/img/rewards/tjs.jpg",
             "incart": false
         },
@@ -243,13 +155,7 @@
             "price": 5000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Food",
-                "Grocery",
-                "Groceries"
-            ],
+            "tags": "Gift Card:Shopping:Food:Grocery:Groceries",
             "image": "../../../assets/img/rewards/tjs.jpg",
             "incart": false
         },
@@ -259,13 +165,7 @@
             "price": 25000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Food",
-                "Grocery",
-                "Groceries"
-            ],
+            "tags": "Gift Card:Shopping:Food:Grocery:Groceries",
             "image": "../../../assets/img/rewards/tjs.jpg",
             "incart": false
         },
@@ -275,14 +175,7 @@
             "price": 2500,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Food",
-                "Walmart",
-                "Everyday",
-                "Items"
-            ],
+            "tags": "Gift Card:Shopping:Food:Walmart:Everyday:Items",
             "image": "../../../assets/img/rewards/walmart.jpg",
             "incart": false
         },
@@ -292,14 +185,7 @@
             "price": 5000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Food",
-                "Walmart",
-                "Everyday",
-                "Items"
-            ],
+            "tags": "Gift Card:Shopping:Food:Walmart:Everyday:Items",
             "image": "../../../assets/img/rewards/walmart.jpg",
             "incart": false
         },
@@ -309,14 +195,7 @@
             "price": 25000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Food",
-                "Walmart",
-                "Everyday",
-                "Items"
-            ],
+            "tags": "Gift Card:Shopping:Food:Walmart:Everyday:Items",
             "image": "/assets/img/rewards/walmart.jpg",
             "incart": false
         },
@@ -326,13 +205,7 @@
             "price": 2500,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Travel",
-                "Gasoline",
-                "Gas"
-            ],
+            "tags": "Gift Card:Shopping:Travel:Gasoline:Gas",
             "image": "../../../assets/img/rewards/bp.jpg",
             "incart": false
         },
@@ -342,13 +215,7 @@
             "price": 5000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Travel",
-                "Gasoline",
-                "Gas"
-            ],
+            "tags": "Gift Card:Shopping:Travel:Gasoline:Gas",
             "image": "../../../assets/img/rewards/bp.jpg",
             "incart": false
         },
@@ -358,13 +225,7 @@
             "price": 25000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Shopping",
-                "Travel",
-                "Gasoline",
-                "Gas"
-            ],
+            "tags": "Gift Card:Shopping:Travel:Gasoline:Gas",
             "image": "../../../assets/img/rewards/bp.jpg",
             "incart": false
         },
@@ -374,13 +235,7 @@
             "price": 4250,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Travel",
-                "Commuting",
-                "Voucher",
-                "Public Transport"
-            ],
+            "tags": "Gift Card:Travel:Commuting:Voucher:Public Transport",
             "image": "../../../assets/img/rewards/metro.jpg",
             "incart": false
         },
@@ -390,14 +245,7 @@
             "price": 22500,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "iPad"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:iPad",
             "image": "../../../assets/img/rewards/ipad-mini-4.jpeg",
             "incart": false
         },
@@ -407,14 +255,7 @@
             "price": 17500,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "iPad"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:iPad",
             "image": "../../../assets/img/rewards/ipad-ipad.jpeg",
             "incart": false
         },
@@ -424,14 +265,7 @@
             "price": 33750,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "iPad"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:iPad",
             "image": "../../../assets/img/rewards/ipad-pro-10in.jpeg",
             "incart": false
         },
@@ -441,14 +275,7 @@
             "price": 42500,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "iPad"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:iPad",
             "image": "../../../assets/img/rewards/ipad-pro-11in.jpeg",
             "incart": false
         },
@@ -458,14 +285,7 @@
             "price": 55000,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "iPad"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:iPad",
             "image": "../../../assets/img/rewards/ipad-pro-12in.jpeg",
             "incart": false
         },
@@ -475,14 +295,7 @@
             "price": 21250,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "Watch"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:Watch",
             "image": "../../../assets/img/rewards/watch-s4.jpeg",
             "incart": false
         },
@@ -492,14 +305,7 @@
             "price": 20200,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Apple",
-                "Tablet",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "Watch"
-            ],
+            "tags": "Apple:Tablet:Electronics:Computer:Mobile:Watch",
             "image": "../../../assets/img/rewards/watch-s3.jpg",
             "incart": false
         },
@@ -509,13 +315,7 @@
             "price": 7000,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitbit",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "Watch"
-            ],
+            "tags": "Fitbit:Electronics:Computer:Mobile:Watch",
             "image": "../../../assets/img/rewards/fitbit-charge3.png",
             "incart": false
         },
@@ -525,13 +325,7 @@
             "price": 2750,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitbit",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "Watch"
-            ],
+            "tags": "Fitbit:Electronics:Computer:Mobile:Watch",
             "image": "../../../assets/img/rewards/fitbit-flex2.jpg",
             "incart": false
         },
@@ -541,13 +335,7 @@
             "price": 11000,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitbit",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "Watch"
-            ],
+            "tags": "Fitbit:Electronics:Computer:Mobile:Watch",
             "image": "../../../assets/img/rewards/fitbit-versa.png",
             "incart": false
         },
@@ -557,13 +345,7 @@
             "price": 9500,
             "category": "Electronics",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Fitbit",
-                "Electronics",
-                "Computer",
-                "Mobile",
-                "Watch"
-            ],
+            "tags": "Fitbit:Electronics:Computer:Mobile:Watch",
             "image": "../../../assets/img/rewards/fitbit-ionic.png",
             "incart": false
         },
@@ -573,12 +355,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Dunkin Donuts",
-                "Coffee",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Dunkin Donuts:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/dunkin.jpg",
             "incart": false
         },
@@ -588,12 +365,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Dunkin Donuts",
-                "Coffee",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Dunkin Donuts:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/dunkin.jpg",
             "incart": false
         },
@@ -603,12 +375,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Dunkin Donuts",
-                "Coffee",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Dunkin Donuts:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/dunkin.jpg",
             "incart": false
         },
@@ -618,12 +385,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Coffee",
-                "Starbucks",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Starbucks:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/starbucks.png",
             "incart": false
         },
@@ -633,12 +395,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Coffee",
-                "Starbucks",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Starbucks:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/starbucks.png",
             "incart": false
         },
@@ -648,12 +405,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Coffee",
-                "Starbucks",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Starbucks:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/starbucks.png",
             "incart": false
         },
@@ -663,12 +415,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Coffee",
-                "Tim Hortons",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Tim Hortons:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/tim-hortons.jpeg",
             "incart": false
         },
@@ -678,12 +425,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Coffee",
-                "Tim Hortons",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Tim Hortons:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/tim-hortons.jpeg",
             "incart": false
         },
@@ -693,12 +435,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Coffee",
-                "Tim Hortons",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Coffee:Tim Hortons:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/tim-hortons.jpeg",
             "incart": false
         },
@@ -708,13 +445,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Burgers",
-                "Fries",
-                "McDonalds",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Burgers:Fries:McDonalds:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/mcdonalds.jpg",
             "incart": false
         },
@@ -724,13 +455,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Burgers",
-                "Fries",
-                "McDonalds",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Burgers:Fries:McDonalds:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/mcdonalds.jpg",
             "incart": false
         },
@@ -740,13 +465,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Burgers",
-                "Fries",
-                "McDonalds",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Burgers:Fries:McDonalds:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/mcdonalds.jpg",
             "incart": false
         },
@@ -756,13 +475,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Sandwiches",
-                "Fries",
-                "Arby's",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Sandwiches:Fries:Arby's:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/arbys.jpg",
             "incart": false
         },
@@ -772,13 +485,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Sandwiches",
-                "Fries",
-                "Arby's",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Sandwiches:Fries:Arby's:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/arbys.jpg",
             "incart": false
         },
@@ -788,13 +495,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Sandwiches",
-                "Fries",
-                "Arby's",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Sandwiches:Fries:Arby's:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/arbys.jpg",
             "incart": false
         },
@@ -804,12 +505,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Sandwiches",
-                "Subway",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Sandwiches:Subway:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/subway.jpg",
             "incart": false
         },
@@ -819,12 +515,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Sandwiches",
-                "Subway",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Sandwiches:Subway:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/subway.jpg",
             "incart": false
         },
@@ -834,12 +525,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Sandwiches",
-                "Subway",
-                "Gift Card",
-                "Fast Food"
-            ],
+            "tags": "Sandwiches:Subway:Gift Card:Fast Food",
             "image": "../../../assets/img/rewards/subway.jpg",
             "incart": false
         },
@@ -849,15 +535,7 @@
             "price": 275,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Ride Sharing",
-                "Travel",
-                "Transportation",
-                "Transport",
-                "Car",
-                "Uber",
-                "Gift Card"
-            ],
+            "tags": "Ride Sharing:Travel:Transportation:Transport:Car:Lyft:Gift Card",
             "image": "../../../assets/img/rewards/uber.jpg",
             "incart": false
         },
@@ -867,15 +545,7 @@
             "price": 550,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Ride Sharing",
-                "Travel",
-                "Transportation",
-                "Transport",
-                "Car",
-                "Uber",
-                "Gift Card"
-            ],
+            "tags": "Ride Sharing:Travel:Transportation:Transport:Car:Lyft:Gift Card",
             "image": "../../../assets/img/rewards/uber.jpg",
             "incart": false
         },
@@ -885,15 +555,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Ride Sharing",
-                "Travel",
-                "Transportation",
-                "Transport",
-                "Car",
-                "Uber",
-                "Gift Card"
-            ],
+            "tags": "Ride Sharing:Travel:Transportation:Transport:Car:Lyft:Gift Card",
             "image": "../../../assets/img/rewards/uber.jpg",
             "incart": false
         },
@@ -903,15 +565,7 @@
             "price": 250,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Ride Sharing",
-                "Travel",
-                "Transportation",
-                "Transport",
-                "Car",
-                "Lyft",
-                "Gift Card"
-            ],
+            "tags": "Ride Sharing:Travel:Transportation:Transport:Car:Lyft:Gift Card",
             "image": "../../../assets/img/rewards/lyft.png",
             "incart": false
         },
@@ -921,15 +575,7 @@
             "price": 500,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Ride Sharing",
-                "Travel",
-                "Transportation",
-                "Transport",
-                "Car",
-                "Lyft",
-                "Gift Card"
-            ],
+            "tags": "Ride Sharing:Travel:Transportation:Transport:Car:Lyft:Gift Card",
             "image": "../../../assets/img/rewards/lyft.png",
             "incart": false
         },
@@ -939,15 +585,7 @@
             "price": 1000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Ride Sharing",
-                "Travel",
-                "Transportation",
-                "Transport",
-                "Car",
-                "Lyft",
-                "Gift Card"
-            ],
+            "tags": "Ride Sharing:Travel:Transportation:Transport:Car:Lyft:Gift Card",
             "image": "../../../assets/img/rewards/lyft.png",
             "incart": false
         },
@@ -957,17 +595,7 @@
             "price": 2500,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Holiday",
-                "Car",
-                "Transportation",
-                "Transport",
-                "Shopping",
-                "Travel",
-                "Gasoline",
-                "Gas"
-            ],
+            "tags": "Gift Card:Holiday:Car:Transportation:Transport:Shopping:Travel:Gasoline:Gas",
             "image": "../../../assets/img/rewards/holiday.jpeg",
             "incart": false
         },
@@ -977,17 +605,7 @@
             "price": 5000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Holiday",
-                "Car",
-                "Transportation",
-                "Transport",
-                "Shopping",
-                "Travel",
-                "Gasoline",
-                "Gas"
-            ],
+            "tags": "Gift Card:Holiday:Car:Transportation:Transport:Shopping:Travel:Gasoline:Gas",
             "image": "../../../assets/img/rewards/holiday.jpeg",
             "incart": false
         },
@@ -997,17 +615,7 @@
             "price": 25000,
             "category": "Gift Card",
             "description": "Lorem ipsum dolor sit amet, ne vis quem graeco consetetur, id eam doming admodum epicurei. Mei tritani mandamus scriptorem cu, labore insolens platonem id eam.",
-            "tags": [
-                "Gift Card",
-                "Holiday",
-                "Car",
-                "Transportation",
-                "Transport",
-                "Shopping",
-                "Travel",
-                "Gasoline",
-                "Gas"
-            ],
+            "tags": "Gift Card:Holiday:Car:Transportation:Transport:Shopping:Travel:Gasoline:Gas",
             "image": "../../../assets/img/rewards/holiday.jpeg",
             "incart": false
         }

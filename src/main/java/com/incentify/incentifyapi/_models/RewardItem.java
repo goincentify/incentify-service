@@ -1,8 +1,5 @@
 package com.incentify.incentifyapi._models;
 
-import java.util.List;
-
-import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -15,9 +12,7 @@ public class RewardItem {
 	Integer price;
 	String category;
 	String description;
-
-	@ElementCollection
-	List<String> tags;
+	String tags;
 
 	String image;
 	Boolean incart;
@@ -99,14 +94,14 @@ public class RewardItem {
 	/**
 	 * @return the tags
 	 */
-	public List<String> getTags() {
+	public String getTags() {
 		return tags;
 	}
 
 	/**
 	 * @param tags the tags to set
 	 */
-	public void setTags(List<String> tags) {
+	public void setTags(String tags) {
 		this.tags = tags;
 	}
 
