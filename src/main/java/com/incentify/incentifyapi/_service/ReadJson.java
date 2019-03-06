@@ -2,30 +2,30 @@ package com.incentify.incentifyapi._service;
 
 import java.io.File;
 
+import org.springframework.stereotype.Service;
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import org.springframework.stereotype.Service;
 
 @Service
 public class ReadJson {
 
-    public JsonNode readFileAsString(String filepath) {
+	public String readFileAsString(String filepath) {
 
-        File file = new File(filepath);
+		File file = new File(filepath);
 
-        ObjectMapper mapper = new ObjectMapper();
+		ObjectMapper mapper = new ObjectMapper();
 
-        try {
+		try {
 
-            JsonNode node = mapper.readValue(file, JsonNode.class);
+			JsonNode node = mapper.readValue(file, JsonNode.class);
 
-            return node;
+			return node.toString();
 
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
 
 }
