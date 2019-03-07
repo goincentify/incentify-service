@@ -6,7 +6,7 @@ import javax.persistence.Id;
 @Entity
 public class RewardItem {
 	@Id
-	Integer id;
+	Long id;
 
 	String name;
 	Integer price;
@@ -15,7 +15,8 @@ public class RewardItem {
 	String tags;
 
 	String image;
-	Boolean incart;
+	// thinking this incart field should really never be used?
+	// Boolean incart;
 
 	public RewardItem() {
 		super();
@@ -24,14 +25,14 @@ public class RewardItem {
 	/**
 	 * @return the id
 	 */
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -122,15 +123,15 @@ public class RewardItem {
 	/**
 	 * @return the incart
 	 */
-	public Boolean getIncart() {
-		return incart;
-	}
+	/*
+	 * public Boolean getIncart() { return incart; }
+	 */
 
 	/**
 	 * @param incart the incart to set
 	 */
-	public void setIncart(Boolean incart) {
-		this.incart = incart;
-	}
+	/*
+	 * public void setIncart(Boolean incart) { this.incart = incart; }
+	 */
 
 }
