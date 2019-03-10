@@ -15,8 +15,7 @@ public class RewardItem {
 	String tags;
 
 	String image;
-	// thinking this incart field should really never be used?
-	// Boolean incart;
+	Boolean incart;
 
 	public RewardItem() {
 		super();
@@ -123,15 +122,15 @@ public class RewardItem {
 	/**
 	 * @return the incart
 	 */
-	/*
-	 * public Boolean getIncart() { return incart; }
-	 */
+	public Boolean getIncart() {
+		return incart;
+	}
 
 	/**
 	 * @param incart the incart to set
 	 */
-	/*
-	 * public void setIncart(Boolean incart) { this.incart = incart; }
-	 */
+	public void setIncart(Boolean incart) {
+		this.incart = incart;
+	}
 
 }
