@@ -1,9 +1,19 @@
 package com.incentify.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import javax.persistence.*;
 import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 public class User {
@@ -11,15 +21,33 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
     @Column
     private String username;
+
     @Column
     @JsonIgnore
     private String password;
-    @Column
-    private long salary;
+
     @Column
     private int age;
+
+    String firstName;
+    String lastName;
+    String token;
+    String job;
+    String tier;
+    String bio;
+    String address;
+    String city;
+    String state;
+    Integer zip;
+    String interests;
+    String picture;
+    Integer points;
+    Integer totaldays;
+    Integer ontimedays;
+    Integer daystreak;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "USER_ROLES", joinColumns = { @JoinColumn(name = "USER_ID") }, inverseJoinColumns = {
@@ -48,14 +76,6 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
     }
 
     public int getAge() {

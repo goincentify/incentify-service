@@ -3,8 +3,7 @@ package com.incentify.controller;
 import com.incentify.config.TokenProvider;
 import com.incentify.model.AuthToken;
 import com.incentify.model.LoginUser;
-// import com.incentify.model.User;
-import com.incentify.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -12,7 +11,11 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 // import static com.incentify.model.Constants.TOKEN_PREFIX;
 
@@ -26,9 +29,6 @@ public class AuthenticationController {
 
     @Autowired
     private TokenProvider jwtTokenUtil;
-
-    @Autowired
-    private UserService userService;
 
     @RequestMapping(value = "/generate-token", method = RequestMethod.POST)
     public ResponseEntity<?> register(@RequestBody LoginUser loginUser) throws AuthenticationException {
