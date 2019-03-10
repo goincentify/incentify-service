@@ -1,6 +1,5 @@
 package com.devglan.config;
 
-import com.devglan.model.User;
 import io.jsonwebtoken.*;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -16,7 +15,7 @@ import java.util.Date;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import static com.devglan.model.Constants.ACCESS_TOKEN_VALIDITY_SECONDS;
+import static com.devglan.model.Constants.ACCESS_TOKEN_VALIDITY_MINUTE;
 import static com.devglan.model.Constants.AUTHORITIES_KEY;
 import static com.devglan.model.Constants.SIGNING_KEY;
 
@@ -37,10 +36,7 @@ public class TokenProvider implements Serializable {
     }
 
     private Claims getAllClaimsFromToken(String token) {
-        return Jwts.parser()
-                .setSigningKey(SIGNING_KEY)
-                .parseClaimsJws(token)
-                .getBody();
+        return Jwts.parser().setSigningKey(SIGNING_KEY).parseClaimsJws(token).getBody();
     }
 
     private Boolean isTokenExpired(String token) {
@@ -49,26 +45,20 @@ public class TokenProvider implements Serializable {
     }
 
     public String generateToken(Authentication authentication) {
-        final String authorities = authentication.getAuthorities().stream()
-                .map(GrantedAuthority::getAuthority)
+        final String authorities = authentication.getAuthorities().stream().map(GrantedAuthority::getAuthority)
                 .collect(Collectors.joining(","));
-        return Jwts.builder()
-                .setSubject(authentication.getName())
-                .claim(AUTHORITIES_KEY, authorities)
-                .signWith(SignatureAlgorithm.HS256, SIGNING_KEY)
-                .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + ACCESS_TOKEN_VALIDITY_SECONDS*1000))
-                .compact();
+        return Jwts.builder().setSubject(authentication.getName()).claim(AUTHORITIES_KEY, authorities)
+                .signWith(SignatureAlgorithm.HS256, SIGNING_KEY).setIssuedAt(new Date(System.currentTimeMillis()))
+                .setExpiration(new Date(System.currentTimeMillis() + ACCESS_TOKEN_VALIDITY_MINUTE * 60)).compact(); // 1-hour-validation
     }
 
     public Boolean validateToken(String token, UserDetails userDetails) {
         final String username = getUsernameFromToken(token);
-        return (
-              username.equals(userDetails.getUsername())
-                    && !isTokenExpired(token));
+        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
 
-    UsernamePasswordAuthenticationToken getAuthentication(final String token, final Authentication existingAuth, final UserDetails userDetails) {
+    UsernamePasswordAuthenticationToken getAuthentication(final String token, final Authentication existingAuth,
+            final UserDetails userDetails) {
 
         final JwtParser jwtParser = Jwts.parser().setSigningKey(SIGNING_KEY);
 
@@ -76,10 +66,9 @@ public class TokenProvider implements Serializable {
 
         final Claims claims = claimsJws.getBody();
 
-        final Collection<? extends GrantedAuthority> authorities =
-                Arrays.stream(claims.get(AUTHORITIES_KEY).toString().split(","))
-                        .map(SimpleGrantedAuthority::new)
-                        .collect(Collectors.toList());
+        final Collection<? extends GrantedAuthority> authorities = Arrays
+                .stream(claims.get(AUTHORITIES_KEY).toString().split(",")).map(SimpleGrantedAuthority::new)
+                .collect(Collectors.toList());
 
         return new UsernamePasswordAuthenticationToken(userDetails, "", authorities);
     }
