@@ -1,6 +1,5 @@
 package com.incentify.incentifyapi._models;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -16,7 +15,7 @@ public class Cart {
 	Long id;
 
 	@OneToMany(cascade = CascadeType.ALL)
-	List<RewardItem> items = new ArrayList<RewardItem>();
+	List<RewardItem> items;
 
 	public Cart() {
 		super();
@@ -36,5 +35,9 @@ public class Cart {
 
 	public void setCartItems(List<RewardItem> cartItems) {
 		this.items = cartItems;
+	}
+
+	public void addCartItem(RewardItem cartItem) {
+		this.items.add(cartItem);
 	}
 }
