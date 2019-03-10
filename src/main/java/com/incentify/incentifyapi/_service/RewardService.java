@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.incentify.incentifyapi._models.RewardItem;
+import com.incentify.incentifyapi.repository.RewardRepository;
 
 @Service
 public class RewardService {

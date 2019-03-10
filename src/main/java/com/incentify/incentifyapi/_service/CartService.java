@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.incentify.incentifyapi._models.Cart;
 import com.incentify.incentifyapi._models.RewardItem;
+import com.incentify.incentifyapi.repository.CartRepository;
+import com.incentify.incentifyapi.repository.RewardRepository;
 
 @Service
 public class CartService {

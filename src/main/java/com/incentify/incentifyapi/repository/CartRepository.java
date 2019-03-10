@@ -1,4 +1,4 @@
-package com.incentify.incentifyapi._service;
+package com.incentify.incentifyapi.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;

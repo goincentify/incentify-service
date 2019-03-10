@@ -1,6 +1,7 @@
 package com.incentify.incentifyapi._service;
 
 import com.incentify.incentifyapi._models.RewardCode;
+import com.incentify.incentifyapi.repository.RewardCodeRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
