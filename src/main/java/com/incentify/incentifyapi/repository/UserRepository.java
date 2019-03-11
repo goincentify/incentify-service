@@ -1,4 +1,4 @@
-package com.incentify.incentifyapi._service;
+package com.incentify.incentifyapi.repository;
 
 import com.incentify.incentifyapi._models.User;
 
