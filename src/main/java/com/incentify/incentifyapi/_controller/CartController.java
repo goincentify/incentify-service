@@ -20,7 +20,7 @@ class CartController {
 	@ResponseBody
 	@RequestMapping(value = "/cart/add", method = RequestMethod.POST, produces = "application/json")
 	Cart addItem(@RequestParam(value = "cartId", required = true) Long cartId,
-			@RequestParam(value = "itemsId", required = true) Long itemId) {
+			@RequestParam(value = "itemId", required = true) Long itemId) {
 		return cartService.addItem(cartId, itemId);
 	}
 
