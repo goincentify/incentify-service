@@ -30,24 +30,25 @@ public class User {
     private String password;
 
     @Column
-    private int age;
-
     String firstName;
+
+    @Column
     String lastName;
-    String token;
-    String job;
-    String tier;
-    String bio;
-    String address;
-    String city;
-    String state;
-    Integer zip;
-    String interests;
-    String picture;
-    Integer points;
-    Integer totaldays;
-    Integer ontimedays;
-    Integer daystreak;
+
+    private Integer age;
+    private String job;
+    private String tier;
+    private String bio;
+    private String address;
+    private String city;
+    private String state;
+    private Integer zip;
+    private String interests;
+    private String picture;
+    private Integer points;
+    private Integer totaldays;
+    private Integer ontimedays;
+    private Integer daystreak;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "USER_ROLES", joinColumns = { @JoinColumn(name = "USER_ID") }, inverseJoinColumns = {
@@ -78,11 +79,11 @@ public class User {
         this.password = password;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
