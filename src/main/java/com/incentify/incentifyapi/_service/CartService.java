@@ -1,5 +1,7 @@
 package com.incentify.incentifyapi._service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,5 +30,10 @@ public class CartService {
 		RewardItem itemToRemove = rewardRepository.findById(itemId).get();
 		cart.getCartItems().remove(itemToRemove);
 		return cartRepository.save(cart);
+	}
+
+	public List<RewardItem> getContents(Long cartId) {
+		Cart cart = cartRepository.findById(cartId).get();
+		return cart.getCartItems();
 	}
 }
