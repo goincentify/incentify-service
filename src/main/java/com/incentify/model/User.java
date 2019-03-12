@@ -103,6 +103,142 @@ public class User {
 			@JoinColumn(name = "ROLE_ID") })
 	private Set<Role> roles;
 
+	public Cart getCart() {
+		return cart;
+	}
+
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getJob() {
+		return job;
+	}
+
+	public void setJob(String job) {
+		this.job = job;
+	}
+
+	public String getTier() {
+		return tier;
+	}
+
+	public void setTier(String tier) {
+		this.tier = tier;
+	}
+
+	public String getBio() {
+		return bio;
+	}
+
+	public void setBio(String bio) {
+		this.bio = bio;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public Integer getZip() {
+		return zip;
+	}
+
+	public void setZip(Integer zip) {
+		this.zip = zip;
+	}
+
+	public String getInterests() {
+		return interests;
+	}
+
+	public void setInterests(String interests) {
+		this.interests = interests;
+	}
+
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+
+	public Integer getPoints() {
+		return points;
+	}
+
+	public void setPoints(Integer points) {
+		this.points = points;
+	}
+
+	public Integer getTotaldays() {
+		return totaldays;
+	}
+
+	public void setTotaldays(Integer totaldays) {
+		this.totaldays = totaldays;
+	}
+
+	public Integer getOntimedays() {
+		return ontimedays;
+	}
+
+	public void setOntimedays(Integer ontimedays) {
+		this.ontimedays = ontimedays;
+	}
+
+	public Integer getDaystreak() {
+		return daystreak;
+	}
+
+	public void setDaystreak(Integer daystreak) {
+		this.daystreak = daystreak;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
 	public long getId() {
 		return id;
 	}
