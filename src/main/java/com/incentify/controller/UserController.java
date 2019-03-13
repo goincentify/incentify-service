@@ -28,6 +28,15 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 
+	// Eventually don't use this endpoint, or re-purpose to support adding the
+	// encrypted password like signup endpoint
+	@RequestMapping(value = "/user/register", method = RequestMethod.POST, produces = "application/json")
+	public @ResponseBody String registerUser(@RequestParam String firstName, @RequestParam String lastName,
+			@RequestParam String username, @RequestParam String password) {
+
+		return "Register: " + userService.registerUser(firstName, lastName, username, password);
+	}
+
 	// @Secured({"ROLE_ADMIN", "ROLE_USER"})
 	@PreAuthorize("hasAnyRole('USER', 'ADMIN')")
 	// @PreAuthorize("hasRole('USER')")

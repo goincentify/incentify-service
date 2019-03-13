@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 
 import com.incentify.model.Tier;
 import com.incentify.model.User;
-import com.incentify.repository.RewardCodeRepository;
 import com.incentify.repository.UserRepository;
 
 @Service(value = "userService")
@@ -27,9 +26,6 @@ public class UserService implements UserDetailsService {
 
 	@Autowired
 	private RewardCodeService rewardCodeService;
-
-	@Autowired
-	private RewardCodeRepository rewardCodeRepository;
 
 	private Tier tier = new Tier();
 
