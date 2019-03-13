@@ -12,7 +12,7 @@ node_modules
 .classpath
 **/.idea/bin/
 /.metadata/
-
+.DS_Store
 jmeter.log
 src/test/jmeter/jmeter.log
 src/test/jmeter/jmeter.properties
