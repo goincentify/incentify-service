@@ -24,7 +24,7 @@ public class User {
 	private long id;
 
 	@OneToOne(cascade = CascadeType.ALL)
-	Cart cart = new Cart();
+	Cart cart;
 
 	@Column
 	private String username;
