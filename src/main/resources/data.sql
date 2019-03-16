@@ -72,4 +72,9 @@ INSERT INTO role (id, description, name) VALUES (2, 'User role', 'USER');
 INSERT INTO user_roles (user_id, role_id) VALUES (1, 1);
 INSERT INTO user_roles (user_id, role_id) VALUES (1, 2);
 INSERT INTO user_roles (user_id, role_id) VALUES (2, 1);
-INSERT INTO user_roles (user_id, role_id) VALUES (3, 2)
+INSERT INTO user_roles (user_id, role_id) VALUES (3, 2);
+
+-- Cart Load
+INSERT INTO cart (id) VALUES (1);
+INSERT INTO cart (id) VALUES (2);
+INSERT INTO cart (id) VALUES (3);
