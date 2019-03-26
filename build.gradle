@@ -6,7 +6,7 @@ apply plugin: 'java'
 apply plugin: "org.springframework.boot"
 apply plugin: 'io.spring.dependency-management'
 
-group = 'com.incentify'
+group = 'com.perk4me'
 sourceCompatibility = '1.8'
 
 repositories {

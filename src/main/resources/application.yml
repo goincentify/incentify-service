@@ -26,7 +26,7 @@ spring:
 spring:
     profiles: cloud
     datasource:
-        url: jdbc:mysql://localhost:3306/incentify
+        url: jdbc:mysql://localhost:3306/perk4me
         username: root
         password: toor
 
@@ -35,6 +35,6 @@ spring:
 spring:
     profiles: local
     datasource:
-        url: jdbc:mysql://localhost:3306/incentify?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        url: jdbc:mysql://localhost:3306/perk4me?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         username: root
         password: Sergei13
