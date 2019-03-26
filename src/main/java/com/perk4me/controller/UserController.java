@@ -62,7 +62,7 @@ public class UserController {
 	@ResponseBody
 	@RequestMapping(value = "/getUserByUsername", method = RequestMethod.GET, produces = "application/json")
 	User getUserByUsername(
-			@RequestParam(value = "username", required = false, defaultValue = "sergeihanka") String username) {
+			@RequestParam(value = "username", required = false, defaultValue = "lennon") String username) {
 		System.out.println("Made it to service");
 		return userRepository.findByUsername(username);
 	}

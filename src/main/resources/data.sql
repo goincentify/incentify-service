@@ -1,3 +1,7 @@
+-- create database perk4me;
+
+use perk4me;
+
 -- must be first due to foreign key 
 drop table if exists user_roles;
 
