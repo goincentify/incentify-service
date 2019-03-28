@@ -30,6 +30,7 @@ CREATE TABLE `user` (
   `token` varchar(255) DEFAULT NULL,
   `totaldays` int(11) DEFAULT NULL,
   `zip` int(11) DEFAULT NULL,
+  `cart_id` int(11),
   PRIMARY KEY (`id`)
 );
 
@@ -55,20 +56,19 @@ CREATE TABLE `user_roles` (
 alter table user_roles add constraint fk__user_roles__role foreign key (role_id) references role (id);
 alter table user_roles add constraint fk__user_roles__user foreign key (user_id) references user (id);
 
-
 INSERT INTO user
-(id, username, password, age)
+(id, username, password, age, cart_id)
 VALUES
-(1, 'user1', '$2a$04$Ye7/lJoJin6.m9sOJZ9ujeTgHEVM4VXgI2Ingpsnf9gXyXEXf/IlW', 33);
+(1, 'user1', '$2a$04$Ye7/lJoJin6.m9sOJZ9ujeTgHEVM4VXgI2Ingpsnf9gXyXEXf/IlW', 33, 1);
 
 INSERT INTO user
-(id, address,bio,city,daystreak,first_name,interests,job,last_name,ontimedays,password,picture,points,state,tier,token,totaldays,username,zip)
+(id, address,bio,city,daystreak,first_name,interests,job,last_name,ontimedays,password,picture,points,state,tier,token,totaldays,username,zip, cart_id)
 VALUES 
-( 2 , '1 Abbey Road', 'One of the Beatles.', 'New York', 16, 'John', 'Guitar, Singing', 'Employee', 'Lennon', 39, '$2a$04$Ye7/lJoJin6.m9sOJZ9ujeTgHEVM4VXgI2Ingpsnf9gXyXEXf/IlW', 'assets/img/profiles/lennon.jpg', 8700, 'New York', 'Gold', 'fake-jwt-token', 57, 'lennon', 55116);
+( 2 , '1 Abbey Road', 'One of the Beatles.', 'New York', 16, 'John', 'Guitar, Singing', 'Employee', 'Lennon', 39, '$2a$04$Ye7/lJoJin6.m9sOJZ9ujeTgHEVM4VXgI2Ingpsnf9gXyXEXf/IlW', 'assets/img/profiles/lennon.jpg', 8700, 'New York', 'Gold', 'fake-jwt-token', 57, 'lennon', 55116, 2);
 
 insert into user
-    (id, address,bio,city,daystreak,first_name,interests,job,last_name,ontimedays,password,picture,points,state,tier,token,totaldays,username,zip)
-values(3 , '2 Abbey Road', 'One of the Beatles.', 'Boston', 21, 'Paul', 'Guitar, Singing', 'Employee', 'McCartney', 57, '$2a$04$Ye7/lJoJin6.m9sOJZ9ujeTgHEVM4VXgI2Ingpsnf9gXyXEXf/IlW', 'assets/img/profiles/mccartney.jpg', 8700, 'Massachusetts', 'Platinum', 'fake-jwt-token', 63, 'mccartney', 55116);
+    (id, address,bio,city,daystreak,first_name,interests,job,last_name,ontimedays,password,picture,points,state,tier,token,totaldays,username,zip, cart_id)
+values(3 , '2 Abbey Road', 'One of the Beatles.', 'Boston', 21, 'Paul', 'Guitar, Singing', 'Employee', 'McCartney', 57, '$2a$04$Ye7/lJoJin6.m9sOJZ9ujeTgHEVM4VXgI2Ingpsnf9gXyXEXf/IlW', 'assets/img/profiles/mccartney.jpg', 8700, 'Massachusetts', 'Platinum', 'fake-jwt-token', 63, 'mccartney', 55116, 3);
 
 INSERT INTO role (id, description, name) VALUES (1, 'Admin role', 'ADMIN');
 INSERT INTO role (id, description, name) VALUES (2, 'User role', 'USER');
@@ -82,3 +82,6 @@ INSERT INTO user_roles (user_id, role_id) VALUES (3, 2);
 INSERT INTO cart (id) VALUES (1);
 INSERT INTO cart (id) VALUES (2);
 INSERT INTO cart (id) VALUES (3);
+
+-- Set Cart Relationship to User
+alter table user add constraint fk_cart_id foreign key (cart_id) references cart (id);
