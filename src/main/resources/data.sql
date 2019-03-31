@@ -7,6 +7,8 @@ drop table if exists user_roles;
 
 drop table if exists role;
 drop table if exists user;
+drop table if exists cart;
+drop table if exists cart_items;
 
 CREATE TABLE `user` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -47,6 +49,15 @@ CREATE TABLE `user_roles` (
   PRIMARY KEY (`user_id`,`role_id`)
 );
 
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL,  
+  PRIMARY KEY (`id`)
+);
+
+CREATE TABLE `cart_items` (
+  `id` int(11) NOT NULL,  
+  PRIMARY KEY (`id`)
+);
 -- create table role (id bigint not null auto_increment, description varchar(255), name varchar(255), primary key (id));
 
 -- create table user (id bigint not null auto_increment, age integer, password varchar(255), salary bigint, username varchar(255), primary key (id));
